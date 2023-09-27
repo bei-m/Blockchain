@@ -22,16 +22,16 @@ Testavimui naudoti tekstiniai failai:
 * diffsymb1000.txt - failas, kuriame yra 25 000 atsitiktinai sugeneruotų 1000 simbolių ilgio eilučių, kurios porose skiriasi vienu (paskutiniu) simboliu.
   
 ## 1.  Hash funkcijos veikimas
-![Screenshot 2023-09-25 at 15 58 25](https://github.com/bei-m/Blockchain_private/assets/116886672/36615db4-e010-4c59-a8ba-9eb78e88133c)
+![img2](https://github.com/bei-m/Blockchain/assets/116886672/78cf0e6a-aa60-4216-b6da-41838c24cbd6)
 
 ## 2. Hash funkcijos efektyvumas
-<img width="996" alt="Screenshot 2023-09-26 at 13 07 02" src="https://github.com/bei-m/Blockchain_private/assets/116886672/acda25e9-e1de-4597-be22-6fae090f389e">
+<img width="996" alt="img3" src="https://github.com/bei-m/Blockchain/assets/116886672/d3b73ce0-b569-4004-9763-0c45a39827b3">
 
 ## 3. Hash funkcijos atsparumas kolizijai
-![Screenshot 2023-09-25 at 16 01 02](https://github.com/bei-m/Blockchain_private/assets/116886672/39231d0c-aecd-47a0-b443-eaf46f00d40a)
+![img1](https://github.com/bei-m/Blockchain/assets/116886672/d6fd8ef6-bbdb-4c28-8d72-5666fa345296)
 
 ## 4. Lavinos efektas
-<img width="992" alt="Screenshot 2023-09-26 at 17 07 25" src="https://github.com/bei-m/Blockchain_private/assets/116886672/cc21eacd-6bb2-4ee7-92ea-7339f9dbd609">
+<img width="992" alt="img4" src="https://github.com/bei-m/Blockchain/assets/116886672/0bf1d2fe-bd94-49d6-9913-70f51a92b656">
 
 ## Išvados
 1. Funkcija veikia greitai nepaisant įvesties dydžio.
