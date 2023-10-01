@@ -3,7 +3,7 @@
 
 #include "mylib.h"
 
-string hash (wstring tekstas)
+string hash(wstring tekstas)
 {
     unsigned long int temp=0, temp_2;
     string t, final, hex="0123456789abcdef";
@@ -32,6 +32,34 @@ string hash (wstring tekstas)
     {for (int i=63; i>=0; i--) {final=final+t[i];} }
 
     return final;
+};
+
+wstring salted(wstring tekstas, unordered_set<string> &salts)
+{
+    std::random_device rd;
+    std::mt19937 mt(rd());
+    std::uniform_int_distribution<int> dist1(7, 25);
+    std::uniform_int_distribution<int> dist2(33, 126);
+    int kiekis;
+    char symbol, fl;
+    string salt;
+    bool b;
+    do
+    {
+        salt.clear();
+        b=true ;
+        kiekis=dist1(mt);
+        for (int i=0; i<kiekis; i++)
+        {
+            symbol = static_cast<char>(dist2(mt));
+            salt+=symbol;
+        }
+        b=(salts.find(salt)==salts.end());
+    } while(!b);
+    salts.insert(salt);
+    wstring salty(salt.begin(), salt.end());
+    tekstas+=salty;
+    return tekstas;
 };
 
 #endif
