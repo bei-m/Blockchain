@@ -33,8 +33,13 @@ Testavimui naudoti tekstiniai failai:
 ## 4. Lavinos efektas
 <img width="992" alt="img4" src="https://github.com/bei-m/Blockchain/assets/116886672/0bf1d2fe-bd94-49d6-9913-70f51a92b656">
 
+## 5. Hash funkcijos veikimas naudojant salt'us
+Naudotojui pasirinkus naudoti salt'us, naudojant tą patį failą hash reikšmė kiekvieną kartą yra skirtinga, nes salt'o ilgis ir reikšmė yra generuojami atsitiktinai.
+![Screenshot 2023-10-01 at 18 50 27](https://github.com/bei-m/Blockchain/assets/116886672/b9f868c1-f9be-4303-a9a5-b164cc0bf903)
+
 ## Išvados
 1. Funkcija veikia greitai nepaisant įvesties dydžio.
 2. Funkcija yra deterministinė (nepaisant įvesties dydžio, išvesties dydis visada toks pats).
 3. Funkcija yra atspari kolizijai.
 4. Funkcija turi lavinos efekto savybę - vidutiniškas hash reikšmės skirtumas hex lygmenyje - 93.14%, bitų lygmenyje - 49.57%.
+5. Funkcija (pasirinkus naudoti salt'us) turi pakankamai geras hiding ir puzzle-friendliness savybes, nes prie bet kokios įvesties yra pridedamas atsitiktinai sugeneruotas salt'as. 
