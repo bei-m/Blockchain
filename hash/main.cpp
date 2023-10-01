@@ -6,8 +6,15 @@ bool tikrinimas(string a, char b, char c)
 int main ()
 {
     bool yn, b;
-    string choice, hash_v;
+    string s, choice, hash_v;
     wstring tekstas=L"";
+    unordered_set<string> salts;
+    do
+    {
+        cout<<"Jei teksto hash'avimui norite naudoti salt'us - spauskite 't', jei ne - spauskite 'n'. "; //performuluot
+        getline(cin, s);
+        b=tikrinimas(s, 't', 'n');
+    } while (!b);
     do
     {
         do
@@ -45,6 +52,7 @@ int main ()
             cout<<"Įveskite norimą tekstą: ";
             getline(wcin, tekstas);
         }
+        if (tolower(s[0])=='t') {tekstas=salted(tekstas, salts);}
         hash_v=hash(tekstas);
         choice.clear(); tekstas.clear();
         cout<<"Hash value: "<<hash_v<<endl;
