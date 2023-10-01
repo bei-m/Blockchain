@@ -11,7 +11,7 @@ int main ()
     unordered_set<string> salts;
     do
     {
-        cout<<"Jei teksto hash'avimui norite naudoti salt'us - spauskite 't', jei ne - spauskite 'n'. "; //performuluot
+        cout<<"Jei teksto hash'avimui norite naudoti salt'us - spauskite 't', jei ne - spauskite 'n'. ";
         getline(cin, s);
         b=tikrinimas(s, 't', 'n');
     } while (!b);
