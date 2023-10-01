@@ -10,12 +10,14 @@
 #include <chrono>
 #include <sstream>
 #include <codecvt>
+#include <algorithm>
+#include <unordered_set>
+#include <vector>
 
 using std::cout;
 using std::cin;
 using std::endl;
 using std::string;
-using std::fixed;
 using std::ifstream;
 using std::uniform_int_distribution;
 using namespace std::chrono;
@@ -30,5 +32,7 @@ using std::wifstream;
 using std::swap;
 using std::locale;
 using std::codecvt_utf8;
+using std::unordered_set;
+using std::vector;
 
 #endif
