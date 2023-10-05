@@ -30,12 +30,11 @@ int main ()
             do
             {
                 cout<<"Failai (txt) šiuo metu esantys aplanke: "<<endl;
-                system("ls *.txt | grep -v 'g.txt'");
+                system("ls *.txt");
                 cout<<"Įrašykite (txt) failo pavadinimą: ";
                 getline(cin,pav);
                 pav.find(".TXT")!=pav.npos? pav.erase(pav.length()-4):pav=pav;
                 pav.find(".txt")!=pav.npos? pav=pav:pav=pav+".txt";
-                const char* ff=pav.c_str();
                 wifstream data(pav);
                 if (!data.is_open()) {cout<<"Klaida. Nepavyko rasti tokio failo."<<endl; b=false;}
                 else {b=true;}
