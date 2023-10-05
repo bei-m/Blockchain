@@ -41,7 +41,7 @@ wstring salted(wstring tekstas, unordered_set<string> &salts)
     std::uniform_int_distribution<int> dist1(7, 25);
     std::uniform_int_distribution<int> dist2(33, 126);
     int kiekis;
-    char symbol, fl;
+    char symbol;
     string salt;
     bool b;
     do
